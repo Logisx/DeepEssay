@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Scoring</title>
+    <!-- Include Bootstrap CSS from a CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Peace+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        /* Set the background image for the entire page */
+        body {
+            background-image: url('../static/watercolor-backgrounds-10.jpg'); /* Replace 'your-image-url.jpg' with the actual image URL or path */
+            background-size: cover; /* Ensure the image covers the entire page */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-attachment: fixed; /* Fixed background */
+            font-family: 'Peace Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff; /* Text color */
+        }
+        /* Define a container for the header section */
+        #header-container {
+            height: 100vh; /* Full viewport height for the header */
+            display: flex;
+            flex-direction: column; /* Align items in a column */
+            justify-content: flex-start; /* Align items to the start (top) */
+            align-items: flex-start; /* Align items to the start (left) */
+            padding: 10%; /* Add some padding for better visibility */
+        }
+        /* Define a container for the form section */
+        #form-container {
+            height: 100vh;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 2%;
+            
+            text-align: center; /* Center-align the container contents */
+        }
+        h1 {
+            font-size: 90px; /* Adjust the font size as needed */
+            text-align: left; /* Align text to the left */
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 40px; /* Adjust the font size as needed */
+            font-weight: bold;
+        }
+        /* Increase the size of the form input field */
+        #input_data {
+            height: 75vh; /* Adjust as needed */
+        }
+        /* Apply opacity only to textarea */
+        .blurred-textarea {
+            background-color: rgba(255, 255, 255, 0.4); /* Background color with opacity */
+            backdrop-filter: blur(10px); /* Apply blur effect to the textarea */
+            width: 100%; /* Make the textarea cover the entire container width */
+        }
+        /* Define a container for the result section */
+        #result-container {
+            height: 100vh;
+            text-align: center; /* Center-align the container contents */
+            color: #fff; /* Text color for the result section */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Center-align the result section */
+        #resultSection {
+            display: none; /* Initially hide the result section */
+        }
+
+        #result {
+            font-size: 60px;
+            font-family: 'Helvetica', sans-serif;
+        }
+        /* Style heading description text */
+        #heading-description {
+            padding-left: 1%;
+            font-size: large;
+        }
+        /* Style the "Try it!" button */
+        #try-it-button {
+            background-color: rgba(0, 0, 0, 0.3); /* Background color with opacity */
+            color: #fff; /* Text color */
+            padding: 20px 40px; /* Increase padding for a bigger button */
+            border: none;
+            cursor: pointer;
+            margin-top: 200px; /* Add margin to separate from description text */
+            border-radius: 20px; /* Rounded corners */
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px; /* Adjust font size for the button text */
+            text-align: center; /* Align text to the left */
+            width: 30%; /* Make the button full width */
+            backdrop-filter: blur(10px); /* Apply blur effect to the button */
+        }
+        /* Style the "Grade it!" button */
+        #grade-it-button {
+            background-color: rgba(0, 0, 0, 0.3); /* Background color with opacity, copied from the "Try it!" button */
+            color: #fff; /* Text color, copied from the "Try it!" button */
+            padding: 20px 40px; /* Increase padding for a bigger button */
+            border: none;
+            cursor: pointer;
+            border-radius: 20px; /* Rounded corners */
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px; /* Adjust font size for the button text */
+            text-align: center; /* Align text to the left */
+            width: 30%; /* Make the button full width */
+            backdrop-filter: blur(10px); /* Apply blur effect to the button */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header-container">
+        <div>
+            <h1>Grade your IELTS!</h1>
+            <p id="heading-description">Utilize the power of Natural Language Processing to make the exam preparation easier.</p>
+        </div>
+        <button id="try-it-button" onclick="scrollToForm()">Try it!</button>
+    </div>
+
+    <!-- Form Section -->
+    <div id="form-container">
+        <form method="POST" action="/">
+            <div class="mb-3">
+                <!-- Apply the .blurred-textarea class to the textarea element -->
+                <textarea class="form-control blurred-textarea" id="input_data" name="input_data" rows="40" required></textarea>
+            </div>
+            <div class="mb-3">
+                <button type="submit" id="grade-it-button" class="btn btn-primary">Grade it!</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result-container">
+        <h2 id="score-header">Your score is</h2>
+        <div id="resultSection">
+            <p id="result"></p>
+        </div>
+    </div>
+
+    
+    <!-- JavaScript to reveal the form section -->
+
+    <script>
+        function showResult(result) {
+            document.getElementById('result').textContent = result;
+            document.getElementById('resultSection').style.display = 'block'; // Display the result section
+        }
+    </script>
+    <script>
+        // Check if there's a result to display (passed from Flask)
+        const result = '{{ result }}';
+        if (result) {
+            showResult(result);
+        }
+        
+        // Function to scroll to the form container
+        function scrollToForm() {
+            document.getElementById('form-container').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Function to scroll to the result container
+        function scrollToResult() {
+            document.getElementById('result-container').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Function to check if the result has been displayed and scroll to it
+        function checkAndScrollToResult() {
+            const result = '{{ result }}';
+            if (result) {
+                console.log("Got result on frontend");
+                showResult(result);
+                scrollToResult();
+            } else {
+                console.log("No result on frontend");
+            }
+        }
+
+        // Call the checkAndScrollToResult function when the page loads
+        window.addEventListener('load', checkAndScrollToResult);
+
+    </script>
+</body>
+</html>

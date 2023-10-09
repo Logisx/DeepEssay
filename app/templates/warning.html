@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warnings</title>
+    <style>
+        /* Set the background image for the entire page */
+        body {
+            background-image: url('../static/watercolor-backgrounds-16.jpg'); /* Replace 'your-image-url.jpg' with the actual image URL or path */
+            background-size: cover; /* Ensure the image covers the entire page */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-attachment: fixed; /* Fixed background */
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Define a container for the warning section */
+        #warning-container {
+            height: 100vh;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 2%;
+            text-align: center; /* Center-align the container contents */
+        }
+        h1 {
+            font-size: 50px; /* Adjust the font size as needed */
+            text-align: center; /* Align text to center */
+            font-weight: bold;
+            color: #fff;
+        }
+        h2 {
+            font-size: 30px; /* Adjust the font size as needed */
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+        }
+        /* Style the list of warnings */
+        #warnings {
+            list-style-type: none;
+            padding-left: 0;
+            color: #fff;
+        }
+        /* Style the warning items */
+        .warning-item {
+            margin-bottom: 10px;
+        }
+        /* Style the "Return to Home" button */
+        #return-to-home-button {
+            background-color: rgba(0, 0, 0, 0.3); /* Background color with opacity */
+            color: #fff; /* Text color */
+            padding: 20px 40px; /* Increase padding for a bigger button */
+            border: none;
+            cursor: pointer;
+            margin-top: 20px; /* Add margin to separate from description text */
+            border-radius: 20px; /* Rounded corners */
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px; /* Adjust font size for the button text */
+            text-align: center; /* Align text to the left */
+            width: 30%; /* Make the button full width */
+            backdrop-filter: blur(10px); /* Apply blur effect to the button */
+        }
+    </style>
+</head>
+<body>
+    <div id="warning-container">
+        <div>
+            <h1>Warnings</h1>
+            <h2>Your input text has some warnings. Please address them before submitting your essay.</h2>
+            <ul id="warnings">
+                {% for warning in warnings %}
+                <li class="warning-item">{{ warning }}</li>
+                {% endfor %}
+            </ul>
+            <button id="return-to-home-button" onclick="window.location.href='/'">Return to Home</button>
+        </div>
+    </div>
+</body>
+</html>
