@@ -1,2 +1,4 @@
 .venv
 ML/models
+ML/__pycache__
+app/__pycache__
