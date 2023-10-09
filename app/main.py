@@ -7,7 +7,7 @@ project_dir = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_dir))
 
 from flask import Flask, render_template, request
-from ML.pipeline import Pipeline
+from app.ML.pipeline import Pipeline
 from app.text_validation import Validator
 
 

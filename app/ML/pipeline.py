@@ -111,7 +111,7 @@ class Pipeline:
             layer.trainable = False
 
         # Load the weights
-        model.load_weights("./ML/models/training_" + self.__config["model_type"] + "/cp.ckpt")
+        model.load_weights("./app/ML/models/training_" + self.__config["model_type"] + "/cp.ckpt")
 
         return model
 
