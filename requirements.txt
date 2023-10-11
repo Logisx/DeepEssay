@@ -57,7 +57,7 @@ pyasn1-modules==0.3.0
 Pygments==2.16.1
 python-dateutil==2.8.2
 pytz==2023.3.post1
-pywin32==306
+#pywin32==306
 PyYAML==6.0.1
 pyzmq==25.1.1
 regex==2023.8.8
@@ -71,9 +71,9 @@ six==1.16.0
 stack-data==0.6.2
 tensorboard==2.14.1
 tensorboard-data-server==0.7.1
+tensorflow-intel
 tensorflow==2.14.0
 tensorflow-estimator==2.14.0
-tensorflow-intel==2.14.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.3.0
 threadpoolctl==3.2.0
