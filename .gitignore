@@ -2,4 +2,3 @@
 app/ML/models
 app/ML/__pycache__
 app/__pycache__
-Dockerfile
