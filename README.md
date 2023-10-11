@@ -1,14 +1,11 @@
-
 ![Logo](https://github.com/Logisx/IELTS-Grading/blob/main/assets/deepessay-high-resolution-logo-color-on-transparent-background.png?raw=true)
 
 
 # Grade your IELTS essay with BERT
-
-
-
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) 
 
-!!!Insert gif or link to demo
+## Demo:
+![Demo](https://github.com/Logisx/IELTS-Grading/blob/main/assets/deepessay-high-resolution-logo-color-on-transparent-background.png?raw=true)
 
 
 ## Overview
