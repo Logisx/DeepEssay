@@ -37,7 +37,7 @@ Welcome to the [IELTS Essay Grading Web Application](https://ielts-grading.azure
 
 - **Predicted Score**: After processing the essay, the application provides users with a predicted IELTS score. This score is an estimate of how the essay might be rated in the actual IELTS exam, helping users gauge their writing proficiency.
 
-- **Warning functionality**: The application includes a warning feature that checks the submitted text. It will display a warning if the essay is too short or if the text does not meet the minimum requirements. This ensures that users are provided with guidance on submitting valid essays.\
+- **Warning functionality**: The application includes a warning feature that checks the submitted text. It will display a warning if the essay is too short or if the text does not meet the minimum requirements. This ensures that users are provided with guidance on submitting valid essays.
 <img src="https://github.com/Logisx/IELTS-Grading/blob/main/assets/Warnings_demo.gif?raw=true" width="400" alt="Warnings demo">
 
 ## :bar_chart: Model choice
