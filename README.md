@@ -1,8 +1,8 @@
 ![Logo](https://github.com/Logisx/IELTS-Grading/blob/main/assets/deepessay-high-resolution-color-logo.png?raw=true)
 
-# Table of Contents
+# :page_facing_up: Table of Contents 
 
-- [Table of Contents](#table-of-contents)
+- [:page\_facing\_up: Table of Contents](#page_facing_up-table-of-contents)
 - [Grade your IELTS essay with BERT](#grade-your-ielts-essay-with-bert)
   - [Features](#features)
   - [Model choice](#model-choice)
@@ -10,11 +10,11 @@
   - [Project structure](#project-structure)
   - [Run Locally](#run-locally)
 - [Roadmap](#roadmap)
-- [License](#license)
+- [⚖️ License](#️-license)
 - [🔗 Links](#-links)
 # Grade your IELTS essay with BERT
 
-Welcome to the IELTS Essay Grading Web Application! This web app is designed to provide users with a convenient and efficient way to have their IELTS essays assessed and receive a predicted score using a Machine Learning model.
+Welcome to the [IELTS Essay Grading Web Application](https://ielts-grading.azurewebsites.net/)! This web app is designed to provide users with a convenient and efficient way to have their IELTS essays assessed and receive a predicted score using a Machine Learning model.
 
 ![Version](https://img.shields.io/badge/Version-1.0-blue.svg)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) \
@@ -52,7 +52,7 @@ After analysing different approaches I decided to continue with 3 models:
   
 The model structures and corresponding Mean Absolute Error (MAE) metrics are shown in the figures below:
 ![Models structure](https://github.com/Logisx/IELTS-Grading/blob/main/assets/Model_structure_white.png?raw=true)
-<img src="https://github.com/Logisx/IELTS-Grading/blob/main/assets/models_mae.png?raw=true" width="400" alt="Models MAE"> \
+<img src="https://github.com/Logisx/IELTS-Grading/blob/main/assets/models_mae.png?raw=true" width="400" alt="Models MAE"> 
 
 Although more complex models produce better results, after testing, it was decided to use a text model for lower latency.
 
@@ -133,7 +133,7 @@ Although more complex models produce better results, after testing, it was decid
 3. **Educational insights feature**: Along with the score, the application will offer insights and suggestions for improvement, making it a valuable educational tool for those looking to enhance their writing skills.
 
 
-# License
+# ⚖️ License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
