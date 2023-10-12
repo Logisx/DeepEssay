@@ -3,16 +3,16 @@
 # :page_facing_up: Table of Contents 
 
 - [:page\_facing\_up: Table of Contents](#page_facing_up-table-of-contents)
-- [Grade your IELTS essay with BERT](#grade-your-ielts-essay-with-bert)
-  - [Features](#features)
-  - [Model choice](#model-choice)
-  - [Tech Stack](#tech-stack)
-  - [Project structure](#project-structure)
-  - [Run Locally](#run-locally)
-- [Roadmap](#roadmap)
+- [:rocket: Grade your IELTS essay with BERT](#rocket-grade-your-ielts-essay-with-bert)
+  - [:star: Features](#star-features)
+  - [:bar\_chart: Model choice](#bar_chart-model-choice)
+  - [:toolbox: Tech Stack](#toolbox-tech-stack)
+  - [:file\_folder: Project structure](#file_folder-project-structure)
+  - [:computer: Run Locally](#computer-run-locally)
+- [:world\_map: Roadmap](#world_map-roadmap)
 - [⚖️ License](#️-license)
 - [🔗 Links](#-links)
-# Grade your IELTS essay with BERT
+# :rocket: Grade your IELTS essay with BERT
 
 Welcome to the [IELTS Essay Grading Web Application](https://ielts-grading.azurewebsites.net/)! This web app is designed to provide users with a convenient and efficient way to have their IELTS essays assessed and receive a predicted score using a Machine Learning model.
 
@@ -30,7 +30,7 @@ Welcome to the [IELTS Essay Grading Web Application](https://ielts-grading.azure
 ![Demo](https://github.com/Logisx/IELTS-Grading/blob/main/assets/Demo.gif?raw=true)
 
 
-## Features
+## :star: Features
 - **Submit Essays**: Users can submit their IELTS essays directly through the web application. The process is user-friendly and straightforward.
 
 - **Machine Learning Essay Grading**: The heart of this application is a finely-tuned BERT (Bidirectional Encoder Representations from Transformers) model. This model analyzes and assesses the submitted essays, considering a variety of linguistic and structural aspects.
@@ -40,7 +40,7 @@ Welcome to the [IELTS Essay Grading Web Application](https://ielts-grading.azure
 - **Warning functionality**: The application includes a warning feature that checks the submitted text. It will display a warning if the essay is too short or if the text does not meet the minimum requirements. This ensures that users are provided with guidance on submitting valid essays.\
 <img src="https://github.com/Logisx/IELTS-Grading/blob/main/assets/Warnings_demo.gif?raw=true" width="400" alt="Warnings demo">
 
-## Model choice
+## :bar_chart: Model choice
 **Detailed training overview with EDA and Feature engineering** can be found in the [notebook](https://github.com/Logisx/IELTS-Grading/blob/main/IELTS_Grading_with_BERT.ipynb).\
 **Dataset**: [IELTS Writing Scored Essays Dataset
 ](https://www.kaggle.com/datasets/mazlumi/ielts-writing-scored-essays-dataset)
@@ -57,7 +57,7 @@ The model structures and corresponding Mean Absolute Error (MAE) metrics are sho
 Although more complex models produce better results, after testing, it was decided to use a text model for lower latency.
 
 
-## Tech Stack
+## :toolbox: Tech Stack
 
 - **Framework**: Flask
 - **NLP**: TensorFlow, BERT, Hugging Face Transformers, Sklearn
@@ -66,7 +66,7 @@ Although more complex models produce better results, after testing, it was decid
 - **Version Control**: Git, GitHub
 - **Testing**: REST client
 
-## Project structure
+## :file_folder: Project structure
 ```
 +---app
 |   |   main.py
@@ -100,7 +100,7 @@ Although more complex models produce better results, after testing, it was decid
 \   requirements.txt
 ```
 
-## Run Locally
+## :computer: Run Locally
 
 1. Clone the project
 
@@ -126,7 +126,7 @@ Although more complex models produce better results, after testing, it was decid
   python app/main.py
 ```
 
-# Roadmap
+# :world_map: Roadmap
 
 1. **Testing features**: Develop unit tests and integrations test.
 2. **Data collection**: Aggregate more data to improve accuracy.
