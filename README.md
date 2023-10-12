@@ -120,7 +120,11 @@ Although more complex models produce better results, after testing, it was decid
   pip install -r requirements.txt
 ```
 
-4. Start the server
+4. Train a model in a notebook and save the weights to:
+```bash
+  ./app/ML/models/training_bert_text
+```
+5. Start the server
 
 ```bash
   python app/main.py
