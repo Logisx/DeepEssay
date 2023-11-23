@@ -139,7 +139,7 @@ Although more complex models produce better results, after testing, it was decid
 
 # ⚖️ License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/Logisx/DeepEssay/blob/main/LICENSE)
 
 
 # 🔗 Links
