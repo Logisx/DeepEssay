@@ -138,7 +138,7 @@ Although more complex models produce better results, after testing, it was decid
 
 # ⚖️ License
 
-[MIT](https://github.com/Logisx/DeepEssay/blob/main/LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Logisx/DeepEssay/blob/main/LICENSE)
 
 
 # 🔗 Links
