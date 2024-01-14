@@ -1,8 +1,8 @@
 ![Logo](https://github.com/Logisx/IELTS-Grading/blob/main/assets/deepessay-high-resolution-color-logo.png?raw=true)
 
-# :page_facing_up: Table of Contents 
+# 📋 Table of Contents 
 
-- [:page\_facing\_up: Table of Contents](#page_facing_up-table-of-contents)
+- [📋 Table of Contents](#page_facing_up-table-of-contents)
 - [:rocket: Grade your IELTS essay with BERT](#rocket-grade-your-ielts-essay-with-bert)
   - [:star: Features](#star-features)
   - [:bar\_chart: Model choice](#bar_chart-model-choice)
