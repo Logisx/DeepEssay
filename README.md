@@ -16,8 +16,7 @@
 
 Welcome to the [IELTS Essay Grading Web Application](https://ielts-grading.azurewebsites.net/)! This web app is designed to provide users with a convenient and efficient way to have their IELTS essays assessed and receive a predicted score using a Machine Learning model.
 
-![Version](https://img.shields.io/badge/Version-1.0-blue.svg)
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) \
+
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.3-green)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.14-orange)
