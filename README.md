@@ -14,7 +14,7 @@
 - [🔗 Links](#-links)
 # :rocket: Grade your IELTS essay with BERT
 
-Welcome to the [IELTS Essay Grading Web Application](https://ielts-grading.azurewebsites.net/)! This web app is designed to provide users with a convenient and efficient way to have their IELTS essays assessed and receive a predicted score using a Machine Learning model.
+Welcome to the IELTS Essay Grading Web Application! This web app is designed to provide users with a convenient and efficient way to have their IELTS essays assessed and receive a predicted score using a Machine Learning model.
 
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
